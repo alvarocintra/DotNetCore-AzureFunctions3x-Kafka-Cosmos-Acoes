@@ -1,0 +1,18 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-3.0.3",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "kafkaTrigger",
+      "consumerGroup": "topic-acoes-docdb",
+      "topic": "topic-acoes-2",
+      "brokerList": "KafkaConnection",
+      "authenticationMode": "notSet",
+      "protocol": "notSet",
+      "name": "kafkaEvent"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/FunctionAppAcoes.dll",
+  "entryPoint": "FunctionAppAcoes.KafkaAcoesTopicTrigger2.Run"
+}
